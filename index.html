@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <title>CORS Hello World!</title>
+</head>
 <body>
-
-<p>Image to use:</p>
-
-<p>Canvas:</p>
-<canvas id="myCanvas" width="240" height="297" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.
-</canvas>
-
-<script>
-window.onload = function() {
-  var ctx = c.getContext("2d");
-  var img = new Image();
-  img.src = "https://s3-ap-southeast-2.amazonaws.com/safipour.net/tulip.jpg"
-  ctx.drawImage(img, 100, 100);
-}
-</script>
-
+  <h1>Hello CORS World!</h1>
+  <div id="loadDiv"></div>
 </body>
 </html>
+
+<script type="text/javascript">
+  $("#loadDiv").load("load.html");
+</script>
